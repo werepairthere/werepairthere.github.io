@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,300italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+		<link rel="stylesheet" href="aboutcontact.css">
+
+  	</head>
+
+	<body>
+  		<div class="wrapper">
+		
+			<div class="top">
+				<img id="topimg" src="http://www.servicenerd.com/uploads/4/5/1/6/45160455/1445959109.jpg" style="width: 100%; height: auto;">
+			</div>	
+			
+			<nav class="menuwrap" id="navigation">
+				
+				<a id="alm" href="index.html">
+					<img id="alm2" src="http://i.imgur.com/d91h7x7.png">
+				</a>
+
+				<ul class="texts">
+			  	  <li id="ho"><a href="index.html">HOME</a></li>
+		  	  	  <li id="ser"><a href="services.html">SERVICES</a></li>
+		  	  	  <li id="abo"><a href="aboutcontact.html#beforeline">ABOUT US</a></li>
+		  	  	  <li id="conta"><a href="aboutcontact.html#beforelineone">CONTACT</a></li>
+				</ul>
+				
+	    	 		<h4 id="we">You Say Where!</h3>
+	    	 		<h5 id="call">Call Today!</h4>
+	    			<h6 id="numbers">(909) 230-1537</h5>
+				
+				<nav class="littleme" id="smallmen">
+					<input type="checkbox" id="drop" />
+					<label for="drop" class="toggle">&#xE5D2;</label>
+					<ul class="othermenu">					
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="services.html">SERVICES</a></li>
+						<li><a href="aboutcontact.html">ABOUT US</a></li>
+						<li><a href="aboutcontact.html#beforelineone" id="nobottom">CONTACT</a></li>
+					</ul>
+				</nav>					
+				
+			</nav>
+			
+			<hr id="beforeline" style="height: 0px; width: 0px; color: transparent; background-color: transparent">
+			
+			<div class="phones">
+				<p id="services">About Us</p>
+					<div class="textsquare">
+						<p id="under">via phone repair was started when we figured out that there is always a way to get to where
+						you want to be. We are a small company which only assures you that you will receive the time and effort 
+						that you deserve on your phone repair. Unlike many place, via phone repair is dedicated to the repair of 
+						mobile phones and we take pride in the quality phone repairs we provide.
+						Just remember that we here at via phone repair we are driven to bringing you the highest quality 
+						repairs at any location. Whether it be during your lunch hour, 
+						after work, or whenever else you need your phone, we will make the drive anywhere
+						and repair. With your convinience and satisfaction always in mind, ever repair comes
+						with a 30 day money back guarantee.</p>  		
+					</div>
+					
+				<hr id="beforelineone" style="height: 0px; width: 0px; color: transparent; background-color: transparent">
+				<hr id="lineone">
+				
+					<div id="littlesquare">
+					</div>
+					
+				<p id="broke">Contact</p>				
+				<p id="lastthing">Email: werepairthere@gmail.com<p>
+				<p id="secondlastthing">Phone: 909.230.1537</p>
+				
+			</div>
+			
+			<hr id="linethree">
+			<hr id="linefive">
+
+			<footer class="cf">
+				<div class="jumbotron2">
+					<p id="copyr">&copy; 2016 via phone repair, all rights reserved | 909.230.1537 | werepairthere@gmail.com</p>
+					<p id="botser">Services</p>
+					<p id="iphoneserv">iPhone Repair</p>
+					<p id="galaxsserv">Galaxy S Repair</p>
+					<p id="galaxnserv">Galaxy Note Repair</p>
+					<p id="oneplusserv">OnePlus Repair</p>
+					<p id="lgserv">LG G Repair</p>
+					<p id="htcserv">HTC One Repair</p>
+					<p id="nexusserv">Nexus Repair</p>
+					<p id="hoursser">Hours</p>
+					<p id="monday">Monday: 10AM-7PM</p>
+					<p id="tuesday">Tuesday: 10AM-7PM</p>
+					<p id="wednesday">Wednesday: 10AM-7PM</p>
+					<p id="thursday">Thursday: 10AM-7PM</p>
+					<p id="friday">Friday: 10AM-7PM</p>
+					<p id="saturday">Saturday: 10AM-5PM</p>
+					<p id="sunday">Sunday: CLOSED</p>
+				</div>
+			</footer>
+		</div>
+		
+		<script>
+  			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  			
+  			ga('create', 'UA-46156385-1', 'cssscript.com');
+  			ga('send', 'pageview');
+		</script>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script>
+		$(document).ready(function() {
+			
+			$('.littleme ul li a').on('click', function(){
+        			$(".othermenu").hide();
+        			$(".toggle").removeClass("hover");
+    			});
+			
+			checkSize();
+			
+			$(window).resize(checkSize);
+		})
+		
+		function checkSize() {
+			if($(".wrapper").css("overflow") == "visible"){
+				var num=500;
+		
+				$(window).bind('scroll', function() {
+					if($(window).scrollTop() > num) {
+						$('.menuwrap').addClass('fixed');
+					} else {
+						$('.menuwrap').removeClass('fixed');
+					}
+				});
+			}
+			
+			if($(".wrapper").css("overflow") == "hidden"){
+				var num=200;
+		
+				$(window).bind('scroll', function() {
+					if($(window).scrollTop() > num) {
+						$('.menuwrap').addClass('fixed');
+					} else {
+						$('.menuwrap').removeClass('fixed');
+					}
+				});
+			}			
+		};	
+		</script>
+	</body>
+</html>
