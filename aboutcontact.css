@@ -1,0 +1,869 @@
+body {
+  height: 1900px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #f7f7f7;
+  overflow: visible;
+  position: absolute;
+}
+
+.wrapper {
+  height: 1900px;
+  width: 100%;
+  position: absolute; 
+  left: 0;
+  right: 0;
+  top: 0;
+  overflow: visible;
+} 
+
+.top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 555px;
+  width: 100%;
+  overflow: hidden;
+}
+  
+.menuwrap {
+  background-color: black;
+  position: absolute;
+  opacity: .7;
+  width: 100%;
+  height: 55px;
+  top: 500px;
+  margin: 0;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.menuwrap p { text-align: right; }
+ .toggle, [id^=drop] {
+ display: none;
+}
+
+.littleme {
+  z-index: 5000;
+  top: 0;
+  left: 90px;
+  right: 0;
+  text-align: right;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  display: none;
+}
+
+.littleme:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.littleme ul {
+  padding: 0;
+  list-style: none;
+  position: relative;
+}
+
+.littleme ul li {
+  margin: 0;
+  text-align: center;
+  height: auto;
+  width: 100%;
+  display: inline-block;
+  background-color: black;
+  opacity: 1;
+}
+
+.littleme a {
+  text-align: center;
+  opacity: 1;
+  display: block;
+  background-color: #008080;
+  padding: 0 20px;
+  color: #FFF;
+  font-size: 20px;
+  line-height: 45px;
+  text-decoration: none;
+}
+
+.littleme ul li ul li:hover {
+  background: black;
+  opacity: 1;
+}
+
+.littleme a:hover { 
+  background-color: #008080; 
+  opacity: 1;
+}
+
+.littleme ul ul {
+  display: none;
+  position: absolute;
+  top: 60px;
+}
+
+.littleme ul li:hover > ul { display: inherit; }
+
+.littleme ul ul li {
+  width: 170px;
+  float: none;
+  display: list-item;
+  position: relative;
+}
+
+.littleme ul ul ul li {
+  position: relative;
+  top: -60px;
+  left: 170px;
+}
+
+.littleme li > a:after { content: ' +'; }
+
+.littleme li > a:only-child:after { content: ''; }
+
+.fixed {
+  top: 0;
+  position: fixed;
+  opacity: .82;
+}
+
+#alm {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 55px;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+#alm2 {
+  height: 55px;
+  width: 90px;
+}
+
+h4 {
+  position: absolute;
+  display: none;
+  right: 4px;
+  top: -5px;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 5;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+h5 {
+  position: absolute;
+  display: none;
+  right: 4px;
+  top: 22px;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 5;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+h6 {
+  position: absolute;
+  display: none;
+  right: 4px;
+  top: 50px;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 5;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.texts {
+  position: relative;
+  list-style: none;
+  text-align: center;
+  top: 0px;
+  bottom: 0;
+  z-index: 1000;
+  outline: none;
+}
+
+.texts li {
+  display: inline-block;
+  position: relative;
+  outline: none;
+}
+
+.texts a {
+  color: #FFFFFF;
+  display: inline-block;
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  transition: .5s;
+  font-weight: 5;
+  text-decoration: none;
+  padding: 20px 30px 23px;
+  border-radius: 5px;
+  outline: none;
+}
+
+
+.container a:hover {
+  text-decoration: none;
+}
+
+.texts a:hover:not(#log) {
+  background-color: black;
+  color: #008080;
+  border-radius: 5px;
+  outline: none;
+}
+
+.logo {
+  top: 0;
+  height: 75px;
+  width: 100px;
+  overflow: hidden;
+  border-radius: 7px;
+}
+
+hr {
+  color: #808080;
+  background-color: #808080;
+  width: 80%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  text-align: center;
+}
+
+#beforeline {
+  position: absolute;
+  top: 530px;
+  text-align: center;
+  background-color: transparent;
+  width: 0px;
+  height: 0px;
+}
+
+.phones {
+  position: absolute;
+  height: 1024px;
+  top: 507px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 6%;
+  overflow: visible;
+  text-decoration: none;
+}
+
+.phones  #services{
+  text-align: center;
+  position: absolute;
+  font-family: 'Oswald', sans-serif;
+  top: 95px;
+  left: 0;
+  right: 0;
+  font-size: 55px;
+  font-weight: 100;
+  color: #000000;
+}
+
+.textsquare {
+  position: absolute;
+  left: 2%;
+  top: 230px;
+  right: 40%;
+  height: 500px;
+}
+
+.textsquare #under {
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
+  top: 0px;
+  left: 0;
+  right: 0;
+  font-size: 22px;
+  font-weight: 50;
+  line-height: 150%;
+  color: #000000;
+  text-align: justify;
+}
+
+#beforelineone {
+  position: absolute;
+  top: 560px;
+  text-align: center;
+  background-color: transparent;
+  width: 0px;
+  height: 0px;
+}
+
+#lineone {
+  position: absolute;
+  top: 655px;
+  text-align: center;
+}
+
+#littlesquare {
+  position: absolute;
+  background-image: url('http://i.imgur.com/d91h7x7.png');
+  right: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 230px;
+  height: 35%;
+  width: 35%;
+}
+ 
+.phones #broke {
+  text-align: center;
+  position: absolute;
+  font-family: 'Oswald', sans-serif;
+  top: 740px;
+  left: 0;
+  right: 0;
+  font-size: 55px;
+  font-weight: 100;
+  color: #000000;
+}
+
+.phones #lastthing {
+  text-align: center;
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
+  top: 880px;
+  left: 0;
+  right: 0;
+  font-size: 30px;
+  font-weight: 100;
+  color: #008080;
+}
+
+.phones #secondlastthing {
+  text-align: center;
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
+  top: 950px;
+  left: 0;
+  right: 0;
+  font-size: 30px;
+  font-weight: 100;
+  color: #008080;
+}
+ 
+#linethree {
+  position: absolute;
+  top: 1590px;
+  text-align: center;
+} 
+
+#linefive{
+  position: absolute;
+  top: 1670px;
+  text-align: center;
+  width: 100%;
+  left: 0;
+  right: 0;
+  height: 2px;
+}
+
+.jumbotron2 {
+  background-color: transparent;
+  background-position: center bottom;
+  bottom: 0;
+  height: 65px;
+  width: 100%;
+  overflow: visible;
+  position: absolute;
+}
+
+#copyr {
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
+  top: 38px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 160%;
+  color: #008080;
+  z-index: 1000;
+}
+
+#botser {
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
+  top: -120px;
+  left: 127px;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 160%;
+  color: #008080;
+  z-index: 1000;
+}
+
+#iphoneserv {
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
+  top: -100px;
+  left: 110px;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 160%;
+  color: #000080;
+  z-index: 1000;
+}
+
+#galaxsserv {
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
+  top: -85px;
+  left: 110px;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 160%;
+  color: #000080;
+  z-index: 1000;
+}
+
+#galaxnserv {
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
+  top: -70px;
+  left: 110px;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 160%;
+  color: #000080;
+  z-index: 1000;
+}
+
+#oneplusserv {
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
+  top: -55px;
+  left: 110px;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 160%;
+  color: #000080;
+  z-index: 1000;
+}
+
+#lgserv {
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
+  top: -40px;
+  left: 110px;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 160%;
+  color: #000080;
+  z-index: 1000;
+}
+
+#htcserv {
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
+  top: -25px;
+  left: 110px;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 160%;
+  color: #000080;
+  z-index: 1000;
+}
+
+#nexusserv {
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
+  top: -10px;
+  left: 110px;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 160%;
+  color: #000080;
+  z-index: 1000;
+}
+
+#hoursser{
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
+  top: -120px;
+  right: 155px;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 160%;
+  color: #008080;
+  z-index: 1000;
+}
+
+#monday {
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
+  top: -100px;
+  right: 110px;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 160%;
+  color: #000080;
+  z-index: 1000;
+}
+
+#tuesday {
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
+  top: -85px;
+  right: 110px;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 160%;
+  color: #000080;
+  z-index: 1000;
+}
+
+#wednesday {
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
+  top: -70px;
+  right: 110px;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 160%;
+  color: #000080;
+  z-index: 1000;
+}
+
+#thursday {
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
+  top: -55px;
+  right: 110px;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 160%;
+  color: #000080;
+  z-index: 1000;
+}
+
+#friday {
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
+  top: -40px;
+  right: 110px;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 160%;
+  color: #000080;
+  z-index: 1000;
+}
+
+#saturday {
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
+  top: -25px;
+  right: 110px;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 160%;
+  color: #000080;
+  z-index: 1000;
+}
+
+#sunday {
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
+  top: -10px;
+  right: 110px;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 160%;
+  color: #000080;
+  z-index: 1000;
+}
+
+@media all and (max-width: 1024px) {
+  body {
+    background-color: #f7f7f7;
+    overflow: visible;
+    height: 1100px;
+    width: 100%;
+    top: 0;
+  }
+  
+  .wrapper {
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 1100px;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .top {
+    position: absolute;
+    height: 200px;
+    top: 0;
+  }
+  .menuwrap {
+    transform: translate3d(0px,0px,0px);
+    overflow: visible;
+    position: absolute;
+    width: 100%;
+    opacity: 1;
+    top: 200px;
+    height: 50px;
+    z-index: 6000;
+    left: 0;
+    right: 0;
+  }
+  
+  .fixed {
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    opacity: 1;
+    z-index: 6000;
+  }
+  
+  #alm {
+    position: absolute;
+    height: 50px;
+    top: 0;
+    left: 0;
+  }
+  
+  #alm2 {
+    height: 50px;
+    width: 90px;
+  }
+  
+  .littleme {
+    display: initial;
+    left: 90px;
+    right: 0;
+    z-index: 7000;
+    height: 50px;
+    overflow: visible;
+    background-color: black;
+    opacity: 1;
+  }
+
+  .littleme { margin: 0; }
+
+  .toggle + a,
+   .othermenu { 
+     display: none; 
+   }
+
+  .toggle {
+    display: block;
+    text-align: right;
+    background-color: black;
+    opacity: 1;
+    top: 3px;
+    position: relative;
+    right: 5px;
+    color: #FFFFFF;
+    font-size: 48px;
+    font-weight: 100;
+    line-height: 45px;
+    text-decoration: none;
+    font-family: 'Material Icons', sans-serif;
+    border: none;
+    z-index: 7000;
+  }
+
+  .toggle:hover { 
+    background-color: black; 
+    opacity: 1;
+  }
+  
+  #drop:checked + label {
+    color: #008080;
+  }
+
+  [id^=drop]:checked + label + ul { 
+    display: block;
+  }
+
+  .littleme ul li {
+    display: block;
+    width: 100%;
+    z-index: 6000;
+  }
+
+  .littleme ul ul .toggle,
+   .littleme ul ul a { padding: 0 40px; }
+
+  .littleme ul ul ul a { padding: 0 80px; }
+
+  .littleme a:hover,
+   .littleme ul ul ul a { background-color: #008080; }
+
+  .littleme ul li ul li .toggle,
+   .littleme ul ul a { background-color: #212121; }
+
+  .littleme ul ul {
+    float: none;
+    position: static;
+    color: #ffffff;
+  }
+
+  .littleme ul ul li:hover > ul,
+  .littleme ul li:hover > ul { display: none; }
+
+  .littleme ul ul li {
+    display: block;
+    width: 100%;
+  }
+
+  .littleme ul ul ul li { 
+    position: static;
+  }
+  
+  .texts {
+    position: absolute;
+    display: none;
+  }
+
+  
+  #numbers {
+    position: absolute;
+    display: none;
+  }
+  
+  .phones {
+    top: 290px;
+    left: 0;
+    right: 0;
+    height: 45px;
+    overflow: visible;
+    position: absolute;
+  }
+  
+  .phones #services {
+    position: absolute;
+    font-family: 'Oswald', sans-serif;
+    top: -15px;
+    left: 0;
+    right: 0;
+    font-size: 30px;
+    font-weight: 300px;
+    color: #000000;
+  }
+
+  .textsquare {
+    position: absolute;
+    left: 5px;
+    top: 20px;
+    right: 5px;
+    height: 500px;
+  }
+
+  .phones #under {
+    position: absolute;
+    font-family: 'Roboto condensed', sans-serif;
+    top: 50px;
+    left: 0;
+    right: 0;
+    font-size: 15px;
+    color: #000000;
+  }
+   
+  hr {
+    color: #808080;
+    background-color: #808080;
+    width: 80%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    text-align: center;
+  }
+  #beforeline {
+    position; absolute;
+    display: none;
+    background-color: transparent;
+    color: transparent;
+    top: 380px;
+  }
+  #beforelineone {
+    position: absolute;
+    background-color: transparent;
+    color: transparent;
+    top: 461px;
+  }
+  
+  #lineone {
+    position: absolute;
+    top: 470px;
+    text-align: center;
+  }
+
+  #littlesquare {
+    position: absolute;
+    display: none;
+ }
+  
+  .phones #broke {
+    position: absolute;
+    font-family: 'Oswald', sans-serif;
+    top: 535px;
+    left: 5px;
+    right: 5px;
+    font-size: 30px;
+    font-weight: 100;
+    color: #000000;
+  }
+  
+  .phones #lastthing {
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    top: 620px;
+    left: 0;
+    right: 0;
+    font-size: 20px;
+    font-weight: 100;
+    color: #008080;
+  }
+  
+  .phones #secondlastthing {
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    top: 680px;
+    left: 0;
+    right: 0;
+    font-size: 20px;
+    font-weight: 100;
+    color: #008080;
+  }
+
+  #linethree {
+    position: absolute;
+    text-align: center;
+    top: 1065px;
+  }
+
+  #linefive {
+    position: absolute;
+    display: none;
+  }
+  
+  .footer {
+    display: none;
+  }
+  
+  .jumbotron2 {
+    display: none;
+  }
+  
+}
